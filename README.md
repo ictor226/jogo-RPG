@@ -118,6 +118,7 @@ jogo rpg em javascript
                             }
 
                             alert("Parabens apos você conseguiu finalizar o jogo :) ")
+                            finalizou()
 
 
                         }
@@ -133,8 +134,9 @@ jogo rpg em javascript
                 return; // Termina a função se o jogo acabou
             }
         } else if (escolha == '1' || escolha == '2') {
-            alert("voce acaba saindo correndo para a porta misteriosa com medo do slime");
-            portaMisteriosa()
+            alert("voce acaba saindo correndo para a porta misteriosa com medo do slime porem acaba tropeçando e caido no chão com muito medo do slime e ele acaba matando você");
+            morta()
+            
         }
     }
 
@@ -158,13 +160,14 @@ jogo rpg em javascript
         } else if (item == 2) {
             defJogador += 10;
             alert("Ao vestir a armadura, você sente um cosmo entrando em seu corpo com as almas do submundo e fica paralizado com a tamnha forca, pois " + nome + " não é capas de aguentar tantos poderes do submundo e pela ganância ");
-            nobru();
+            sumiu();
         } else if (item == 3) {
             vidaJogador += 30;
-            alert("Você consumiu o cogomelo (você é doido comendo coisas achadas assim do nada). Você sente como se tivesse duplicado de tamanho");
+            alert("Você consumiu o cogomelo (você é doido comendo coisas achadas assim do nada). Você sente como se tivesse duplicado de tamanho e ganha uma espada longa e brilhosa");
         }
 
         alert('Você sente sua força aumentando\n\nAtaque: ' + atkJogador + '\nDefesa: ' + defJogador + '\nVida: ' + vidaJogador);
+        
 
         corredorEscuro();
     } else if (escolha == "2") {
