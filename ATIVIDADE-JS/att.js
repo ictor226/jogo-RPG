@@ -1,4 +1,4 @@
-<script>
+
     function portaMisteriosa() {
         alert("Você entrou em uma sala");
 
@@ -165,4 +165,4 @@
             }
         }
     }
-</script>
+
